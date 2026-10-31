@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços</title>
+    <title>Contato | Vinland Barba</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="caixa">
-        <h1><img src="frente barbearia.jfif" alt=""> </h1>
+            <h1><a href="index.html"><img src="frente barbearia.jfif" alt="Vinland Barba"></a></h1>
             <nav>
-                <UL>
-                    <li><a href="INDEX.HTML">INÍCIO</a></li>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="servicos.html">SERVIÇOS</a></li>
-                    <li><a href="Contato.html">CONTATOS</a></li>
-                </UL>
+                    <li><a href="Contato.html" class="ativo">CONTATOS</a></li>
+                </ul>
             </nav>
-        <div>
+        </div>
     </header>
     <main>
+        <h2 class="titulo">Fale com a gente</h2>
         <form>
-            <label for="nome">Nome completo</label> <!--NOME-->
+            <label for="nome">Nome completo</label>
             <input type="text" id="nome">
 
-            <label for="email">Email</label> <!--Email-->
-            <input type="text" id="Email">
+            <label for="email">Email</label>
+            <input type="email" id="email">
 
-            <label for="telefone">telefone</label> <!--Telefone-->
-            <input type="text" id="telefone">
-            <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone">
+
+            <fieldset class="opcoes">
                 <p>Como prefere o nosso contato?</p>
                 <label for="radio-email">
                     <input type="radio" name="contato" value="email" id="radio-email">
-                    email
+                    Email
                 </label>
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone
+                </label>
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    WhatsApp
+                </label>
+            </fieldset>
 
-                <label for="radio-email">
-                    <input type="radio" name="contato" value="email" id="radio-email">
-                    telefone
-                </label>
-
-                <label for="radio-email">
-                    <input type="radio" name="contato" value="email" id="radio-email">
-                    Whatsapp
-                </label>
-            </div>
-            <input type="submit" value="Enviar Formulario">
+            <input type="submit" value="Enviar formulário">
         </form>
     </main>
-     <footer>
-        <img src="frente barbearia.jfif" alt="">
-        <p>&copy;Nicolas Seolim - 2026</p>
+    <footer>
+        <img src="frente barbearia.jfif" alt="Vinland Barba">
+        <p>&copy; Nicolas Seolim - 2026</p>
     </footer>
 </body>
 </html>
